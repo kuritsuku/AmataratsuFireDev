@@ -34,6 +34,7 @@ public class RenderBasicBlock extends TileEntitySpecialRenderer {
         GL11.glPopMatrix();
 
 
+        //blyat ne trogat eto xerny
         GL11.glPushMatrix();
         GL11.glTranslatef(+ 0.5F, 0.0F,  + 0.5F);
         long time = System.currentTimeMillis();

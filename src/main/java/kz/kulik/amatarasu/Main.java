@@ -1,6 +1,7 @@
 package kz.kulik.amatarasu;
 
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import kz.kulik.amatarasu.block.BasicModelBlock;
 import kz.kulik.amatarasu.proxy.CommonProxy;
@@ -28,6 +29,8 @@ public class Main {
     public void preInit(FMLPreInitializationEvent event) {
         proxy.preInit(event);
 
+
+
         basic_obj = new BasicModelBlock();
         GameRegistry.registerBlock(basic_obj,"LPL");
         GameRegistry.registerTileEntity(BasicTileEntity.class,"Tileentity");
@@ -44,6 +47,7 @@ public class Main {
         proxy.postInit(event);
 
     }
+
 
 
 }

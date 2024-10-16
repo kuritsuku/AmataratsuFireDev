@@ -4,19 +4,11 @@ import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.registry.GameRegistry;
-import kz.kulik.amatarasu.Main;
-import kz.kulik.amatarasu.block.BasicModelBlock;
 import kz.kulik.amatarasu.render.RenderBasicBlock;
 import kz.kulik.amatarasu.tileentity.BasicTileEntity;
-import net.minecraft.block.Block;
-import net.minecraft.client.renderer.GLAllocation;
-import net.minecraft.item.Item;
+import net.minecraft.client.Minecraft;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.client.MinecraftForgeClient;
-import net.minecraftforge.client.model.AdvancedModelLoader;
-import net.minecraftforge.client.model.IModelCustom;
-import org.lwjgl.opengl.GL11;
+import net.minecraft.world.World;
 
 
 public class ClientProxy extends CommonProxy {
@@ -31,6 +23,8 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void preInit(FMLPreInitializationEvent event) {
         super.preInit(event);
+
+
 
 
     }
@@ -48,6 +42,8 @@ public class ClientProxy extends CommonProxy {
         super.postInit(event);
 
     }
+
+
 
     public void models(){
 
